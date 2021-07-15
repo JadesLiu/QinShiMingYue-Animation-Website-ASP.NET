@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="Home.aspx" title="首页"  description="">
+		<siteMapNode url="register.aspx" title="注册"  description="" >
+		</siteMapNode>
+
+		<siteMapNode url="Login.aspx" title="登录"  description="" >
+		</siteMapNode>
+
+		<siteMapNode url="entertainment.aspx" title="娱乐互动"  description="" >
+			<siteMapNode url="exam.aspx" title="来场秦时测试题？"  description="" />
+			<siteMapNode url="Roles.aspx" title="秦时角色一览（查看编辑）"  description="" />
+			<siteMapNode url="Mytitle.aspx" title="我的称号"  description="" />
+		</siteMapNode>
+	</siteMapNode>
+
+</siteMap>

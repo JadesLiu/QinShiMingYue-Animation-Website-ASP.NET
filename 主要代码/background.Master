@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="background.master.cs" Inherits="WebApplicationFinal_LJY.background" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="Scripts/jquery-3.5.1.min.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 140px;
+            height: 106px;
+        }
+        .auto-style2 {
+            width: 125px;
+            height: 106px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="top">
+            <h3>
+                <img alt="" class="auto-style1" src="imgs/img_b_L.jpg" />欢迎来到秦时明月粉丝俱乐部！<img alt="" class="auto-style2" src="imgs/img_b_R.jpg" />&nbsp;&nbsp;&nbsp; </h3>
+            <asp:Label ID="Label3" runat="server" Text="您现在处于："></asp:Label>
+            <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath> 
+           
+            <br />
+            <asp:Label ID="Label2" runat="server" ForeColor="LightPink" Text="敢问少侠大名？（你需要注册或登录。）"></asp:Label>
+            <br />
+           <div>
+               <asp:Label ID="Label1" runat="server" Text="菜单："></asp:Label>
+           </div>
+            <div>
+               <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" StaticSubMenuIndent="16px">
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+           </div>
+            
+            <br />
+            <br />
+            <br />
+        </div>
+
+        <div id="main">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+                   
+            </asp:ContentPlaceHolder>
+            
+         </div>   
+        <div id="footer" style="text-align:center">
+
+                <span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">版权信息:Copyright © 2020 Author XXX ALL rights reserved</span><br />
+                <span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">联系电话:+86 131XXXXXXXX</span><br />
+                <span style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">沪安网安备:310XXXXXXXXXXXX</span><br />
+        </div>
+    </form>
+</body>
+</html>
